@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,21 +8,92 @@
         *{
             margin: 0;
             padding: 0;
+            font-size: 14px;
         }
         main{
             display: grid;
-            grid-template-columns: 33vw 66vw;
-            gap: 5px;
+            grid-template-columns: 30vw 2px auto;
+            
         }
         aside{
             place-items: left;
+            margin-left: 1.5rem;
+            margin-right: 1rem;
+            margin-top: 2rem;
         }
+        .blacK-line{
+            background-color: rgb(140, 140, 140);
+            margin-top: 1.2rem;
+            width: 4px;
+            padding-bottom: auto;
+            border-radius: 1.2rem;
+        }
+        article{
+            background-color: black;
+            display: grid;
+            padding: 3px;
+            margin-left: 1rem;
+            margin-right: 3rem;
+            margin-top: 2rem;
+            grid-template-columns: 33vw 33vw;
+            gap: 3px;
+        }
+        button{
+            text-align: center;
+            display: flex;
+            width: 100%;
+            margin-bottom: 0.5rem;
+            padding: 0.5rem;
+        }
+        .standartdiv{
+            background-color: white;
+        }
+        button:hover {
+            transform: translate(-1px, 2px);
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.35);
+        }
+        button:focus-visible{
+            background-color: black;
+        }
+
     </style>
 </head>
 <body>
     <main>
-        <aside>Боковое меню</aside>
-        <div>привет</div>
+        <aside>
+            <div>
+                <button type="button" id="aside1">🧮 Учёт компьютерного оборудования</button>
+            </div>
+            <div>
+                <button type="button" id="aside2">🧮 Департаменты</button>
+            </div>
+            <div>
+                <button type="button" id="aside3">🧮 Список типов оборудования</button>
+            </div>
+            <div>
+                <button type="button" id="asside4">🧮 Сотрудники</button>
+            </div>
+            <div>
+                <button type="button" id="asside5">🧮 Журнал регстрации выдачи оборудования</button>
+            </div>
+        </aside>
+        <div class="blacK-line"></div>
+        <article>
+            <div class="standartdiv">
+                ghb
+            </div>
+            <div class="standartdiv"> 
+                dasd
+
+
+            </div>
+            <div class="standartdiv">
+                dasd
+            </div>
+            <div class="standartdiv">
+                dasdag
+            </div>
+        </article>
     </main>
 </body>
 </html>
