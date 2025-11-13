@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Авторизация</title>
+    <style>
+        *{
+            --background: whitesmoke;
+            --backgroundForm: white;
+            font-size: 20px;
+        }
+        body{
+            background-color: var(--background);
+            display: grid;
+            place-items: center;
+            
+        }
+        
+        form{
+            display: grid;
+            background-color: var(--backgroundForm);
+            padding: 3rem;
+            border-radius: 2.25rem;
+            box-shadow: 2px 2px 3px rgb(177, 177, 177);
+            
+        }
+        
+        div{
+            margin-bottom: 1rem;
+
+        }
+        h1{
+            font-size: 2rem;
+        }
+        button{
+            place-items: center;
+            padding: 0.5rem 0.8rem;
+            border-radius: 0.5rem;
+        }
+        input[type="text"],
+        input[type="password"],
+        textarea {
+            width: 96%;
+            padding: 0.4rem 0.2rem;
+            border-radius: 0.6rem;
+            border: 2px solid ;
+        }
+    </style>
+</head>
+
+
+
+<body>
+    <form action="autorisation">
+        <h1>Авторизация</h1>
+        <div>
+            <label for="login">Логин</label>
+            <input
+                id="login"
+                name="login"
+                type="text"
+            />
+        </div>
+        <div>
+            <label for="password">Пароль</label>
+            <input 
+                id="password"
+                name="password"
+                type="password"
+            />
+        </div>
+        <button title="Войти">Войти</button>
+    </form>
+</body>
+</html>
