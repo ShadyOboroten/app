@@ -3,9 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Главная страница</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        main{
+            display: grid;
+            grid-template-columns: 33vw 66vw;
+            gap: 5px;
+        }
+        aside{
+            place-items: left;
+        }
+    </style>
 </head>
 <body>
-    
+    <main>
+        <aside>Боковое меню</aside>
+        <div>привет</div>
+    </main>
 </body>
 </html>
